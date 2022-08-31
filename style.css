@@ -1,0 +1,162 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.banner{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+
+}
+.banner .box{
+    position: relative;
+    background: #f00;
+    height: 100vh;
+}
+.banner .box{
+    background: #f0f;
+
+}
+header{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo img{
+    max-width: 200px;
+
+}
+header ul{
+    display: flex;
+    gap: 40px;
+}
+header ul li{
+    list-style: none;
+
+}
+header ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(255,255,255,0.5);
+    letter-spacing: 1px;
+
+    
+}
+header ul li a:hover{
+    color: rgb(255,255,255,10)
+}
+.banner  .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner  .content .contentbox{
+    text-align: center;
+}
+.banner  .content .contentbox img{
+     width:100px;
+
+}
+.banner  .content .contentbox p{
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 300;
+}
+.banner  .content .contentbox .btn{
+    display: inline-block;
+    font-size: 1.5em;
+    color: #333;
+    background: #fff;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+.banner  .content .contentbox .btn:hover{
+    letter-spacing: 2px;
+
+}
+.sci{
+    position: absolute;
+    bottom: 30px;
+    right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap :40px;
+}
+.sci h3{
+    font-weight: 500;
+    color: rgb(255,255,255,0.75);
+    letter-spacing: 1px;
+}
+.sci li{
+    list-style: none;
+
+}
+.sci li img{
+    max-width: 30px;
+}
+.banner .images{
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap ;
+
+}
+.banner .images.img0x{
+    position: relative;
+    width: 50%;
+    height: 50vh;
+    background: #ff0;
+}
+.banner .images.img0x:nth-child(2){
+    background: #f00;
+
+}
+.banner .images.img0x:nth-child(3){
+    width: 100%;
+    background: #0ff;
+
+}
+.banner .images.img0x img{
+    position: absolute;
+    top: 0;
+    left: 0;   
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+
+}
+@media(max-width:991px){
+    .banner{
+        grid-template-columns: 1fr ;
+
+    }
+    header{
+        padding:20px 40px ;
+    }
+    .banner .content{
+        padding: 40px;
+        height: 70vh;
+    }
+    .sci{
+        right: 40px;
+
+    }
+
+}
+@media(max-width:600px){
+    .banner.images.img0x{
+        width: 100%;
+    }
+}
